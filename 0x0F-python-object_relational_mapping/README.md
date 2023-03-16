@@ -615,3 +615,6 @@ id  name    state_id
 1   San Francisco   1
 $
 ```
+
+## RESOURES
+https://intranet.alxswe.com/projects/283
