@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Displays the X-Request-Id header variable of  
 a request to a given URL
