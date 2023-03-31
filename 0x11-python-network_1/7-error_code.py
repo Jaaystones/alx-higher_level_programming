@@ -5,9 +5,9 @@ import sys
 if __name__ == "__main__":
     url = sys.argv[1]
 
-    response = requests.get(url)
+    e = requests.get(url)
 
     if response.status_code >= 400:
-        print(f"Error code: {response.status_code}")
+        print(f"Error code: {e.status_code}")
     else:
-        print(response.text)
+        print(e.text)
