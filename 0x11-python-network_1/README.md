@@ -2,8 +2,7 @@
 
 ## Description
 
-This directory has some of my (David John Coleman II) projects for Bootcamp
-School.  The focus of these projects are learning higher level language software
+The focus of these projects are learning higher level language software
 development in primarily python language.  This project works with urllib and
 requests libraries for python
 
