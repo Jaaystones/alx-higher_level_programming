@@ -1,18 +1,13 @@
 #!/usr/bin/node
 const request = require('request');
+const { argv } = require('process');
 
-const movieId = process.argv[2];
-const apiUrl = `https://swapi-api.alx-tools.com/api/films/${movieId}`;
-
-request.get(apiUrl, (err, res, body) => {
-  if (err) {
-    console.error(err);
-    return;
+const arg_ = argv[2];
+const url = 'https://swapi-api.hbtn.io/api/films/' + arg_;
+request(url, function (error, response, body) {
+  if (error) {
+    return console.log(error);
   }
-  const movie = JSON.parse(body);
-  if (movie.episode_id === movieId) {
-    console.log(movie.title);
-  } else {
-    console.log(`No movie found with episode id ${movieId}`);
-  }
+  const json_ = JSON.parse(body);
+  console.log(json_.title);
 });
