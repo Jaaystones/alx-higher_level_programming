@@ -1,5 +1,4 @@
-(function () {
-  'use strict';
-  const header = document.querySelector('header');
-  header.style.color = '#FF0000';
-})();
+document.addEventListener('DOMContentLoaded', function () {
+  const headerElem = document.querySelector('HEADER');
+  headerElem.style.color = '#FF0000';
+});
